@@ -63,17 +63,9 @@ En el escenario mal condicionado, la primera componente del vector b es **1595**
 3. Edición dinámica de datos (prueba aislada con una copia temporal).
 4. Comparación de iteraciones GC/GCP en el escenario mal condicionado.
 
-## Publicar en GitHub Pages
-1. Crea un repositorio público en GitHub.
-2. Sube `index.html` y `README.md` a la raíz.
-3. En Settings → Pages, elige desplegar desde la rama principal y la carpeta `/ (root)`.
-4. Guarda y espera a que GitHub Pages publique el sitio.
-5. Comparte la URL pública del sitio y la URL del repositorio.
 
 ## Bibliografía base del desafío
 - Suñagua S., P. (2020). *Método de Gradientes Conjugados Precondicionado*. Revista Boliviana de Matemática – UMSA, 04, 2–7.
 - Golub, G. H., & Van Loan, C. F. (2013). *Matrix Computations* (4th ed.). Johns Hopkins University Press.
 - Saad, Y. (2003). *Iterative Methods for Sparse Linear Systems* (2nd ed.). SIAM.
 
-## Nota para la defensa
-Explicar que el precondicionador de Jacobi es M = diag(A), y en cada iteración se resuelve Mz = r mediante divisiones por los elementos diagonales. Para el escenario mal condicionado, comparar tanto κ₂(M⁻¹A) como el condicionamiento de la matriz simétrica equivalente M⁻¹/² A M⁻¹/². No confundir la solución numérica de referencia (Cholesky) con una solución algebraica exacta.
